@@ -1,0 +1,43 @@
+{% extends 'base.html' %}  <!-- to inherit from the base.html template-->
+
+{% block content %}
+<div class = "row text-center display-4" style= "margin-bottom: 3%;">
+    <div class = "py-3 col-lg-12 rounded" style = "background-color:white; margin-top: 2%; border:4px solid #76d4f2;"> 
+        <p>Demo</p>
+    </div>
+</div>
+
+<div class = "text-center py-1 rounded" style = "background-color: #76d4f2">
+    <h3 class="text-center"><b>Conditions of Beach</b></h3>
+</div>
+{% if 1+1 == 2 %}
+<div class="py-3 col-lg-12 rounded" style = "box-shadow: 0 15px 30px 1px rgb(120, 170, 233); background: #ffffff;">
+    <p><b>
+        Conditions for {{data['beach']}}, {{data['island']}}</b>
+    </p>
+    <p>
+        Coordinates: {{data['lat']}}, {{data['lon']}}
+    </p>
+    <p>
+        Temp: {{data['temp']}}
+    </p>
+    <p>
+        Weather: {{data['weather']}}
+    </p>
+    <p>
+        Wind: {{data['wind']}}
+    </p>
+    <p>
+        Surf: {{data['surf']}}
+    </p>
+    
+    <p> 
+        visit the <a href="https:\/\/hawaiibeachsafety.com\/oahu\/alii-beach-park">official site </a> for more information
+    </p>
+</div>
+{% endif %}
+    
+
+
+{% endblock %}
+

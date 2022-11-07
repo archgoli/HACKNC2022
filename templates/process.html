@@ -1,0 +1,22 @@
+{% extends 'base.html' %}  <!-- to inherit from the base.html template-->
+
+{% block content %}
+<div class = "row text-center display-4">
+    <div class = "py-3 col-lg-12 rounded" style = "background-color:white; margin-top: 2%; border:4px solid  #76d4f2;"> 
+        <p>The Process</p>
+    </div>
+</div>
+
+<div class = "row text-center">
+    <div class = "py-3 col-lg-12 rounded" style = "background-color:#7fcdff; margin-top: 2%;"> 
+        <p style = "color: white"> We used the Hawaii Beach safety API to get real-time data of beaches in Hawaii. We then used Flask and Python to build the backend
+            and Bootstrap to build the front-end with the help of Jinja, a templating machine.
+    </p>
+    </div>
+</div>
+<div class = "row text-center">
+    <div class = "py-5 col-lg-12 rounded" style = "background-color:#4fb1ef; margin-top: 2%;"> 
+        <p style = "color: white";>If you would like to see our tracker in action, head on to the demo page!</p>
+    </div>
+</div>
+{% endblock %}
